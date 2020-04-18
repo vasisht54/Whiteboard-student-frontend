@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wbdv-sp20-vasisht-client-angular"
+    }
+  },
+  "defaultProject": "wbdv-sp20-vasisht-client-angular",
+  "cli": {
+    "analytics": "a1bd4daa-6e85-4c77-8dd1-4e34db4304de"
+  }
 }
