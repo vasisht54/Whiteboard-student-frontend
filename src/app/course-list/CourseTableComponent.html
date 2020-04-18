@@ -3,6 +3,6 @@
 
 <ul>
   <li *ngFor="let course of courses">
-    {{course.title}}
+    <a href="/table/courses/{{course._id}}">{{course.title}}</a>
   </li>
 </ul>
