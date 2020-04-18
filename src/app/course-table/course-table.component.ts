@@ -3,8 +3,8 @@ import {CourseServiceClient} from '../services/CourseServiceClient';
 
 @Component({
   selector: 'app-course-list',
-  templateUrl: './CourseTableComponent.html',
-  styleUrls: ['./CourseTableComponent.css']
+  templateUrl: './course-table.component.html',
+  styleUrls: ['./course-table.component.css']
 })
 export class CourseTableComponent implements OnInit {
 
