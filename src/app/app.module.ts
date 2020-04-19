@@ -10,6 +10,9 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { HomeComponent } from './home/home.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import {ModuleServiceClient} from './services/ModuleServiceClient';
+import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
+import {LessonServiceClient} from './services/LessonServiceClient';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,16 +20,19 @@ import {ModuleServiceClient} from './services/ModuleServiceClient';
     CourseTableComponent,
     CourseViewerComponent,
     HomeComponent,
-    ModuleListComponent
+    ModuleListComponent,
+    LessonTabsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     CourseServiceClient,
-    ModuleServiceClient
+    ModuleServiceClient,
+    LessonServiceClient
   ],
   bootstrap: [AppComponent]
 })

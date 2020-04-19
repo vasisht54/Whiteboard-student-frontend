@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {CourseServiceClient} from '../services/CourseServiceClient';
+import {faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-course-viewer-component',
@@ -14,6 +15,8 @@ export class CourseViewerComponent implements OnInit {
   courseId: '';
 
   course: {_id: '1', title: 'a'};
+
+  backIcon = faArrowAltCircleLeft;
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {

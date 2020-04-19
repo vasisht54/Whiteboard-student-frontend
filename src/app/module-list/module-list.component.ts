@@ -12,9 +12,7 @@ export class ModuleListComponent implements OnInit {
   constructor(private service: ModuleServiceClient, private route: ActivatedRoute) { }
 
   modules = [
-    {_id: '1', title: 'module A'},
-    {_id: '2', title: 'module B'},
-    {_id: '3', title: 'module C'}
+    {_id: '', title: ''}
   ];
 
   courseId = '';

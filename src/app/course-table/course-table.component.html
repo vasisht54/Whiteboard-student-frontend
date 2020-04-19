@@ -1,8 +1,13 @@
-<h1>Course list</h1>
-
-
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let course of courses">
-    <a routerLink="/table/courses/{{course._id}}">{{course.title}}</a>
-  </li>
-</ul>
+<div class="container mt-4">
+  <div class="bg-dark col-sm-7">
+  <h1 class="text-white">Course list</h1>
+  </div>
+  <ul class="list-group col-sm-7">
+    <li class="list-group-item" *ngFor="let course of courses">
+      <h4>
+      <fa-icon [icon]="faFileAlt"></fa-icon>&nbsp;&nbsp;
+      <a routerLink="/table/courses/{{course._id}}/modules">{{course.title}}</a>
+      </h4>
+    </li>
+  </ul>
+</div>

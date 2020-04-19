@@ -1,4 +1,25 @@
-<a routerLink="/table/courses">Back</a>
-<h1>{{course.title}}</h1>
+<div class="container mt-4">
+  <div class="bg-dark row">
+    <a class="pt-2 col-sm-2" routerLink="/table/courses">
+      <fa-icon [icon]="backIcon" transform = "grow-15"></fa-icon></a>
+    <h2 class="col-sm-8 text-white">{{course.title}}</h2>
+  </div>
 
-<app-module-list></app-module-list>
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-4">
+        <h3>Module list</h3>
+        <app-module-list></app-module-list>
+      </div>
+      <div class="col-8 pt-1">
+        <h4>Lesson tabs</h4>
+        <app-lesson-tabs></app-lesson-tabs>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
