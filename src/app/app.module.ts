@@ -16,6 +16,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { QuizComponent } from './quiz/quiz.component';
 import {QuizServiceClient} from './services/QuizServiceClient';
+import { MultipleChoiceQuestionComponent } from './multiple-choice-question/multiple-choice-question.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {QuizServiceClient} from './services/QuizServiceClient';
     ModuleListComponent,
     LessonTabsComponent,
     QuizzesComponent,
-    QuizComponent
+    QuizComponent,
+    MultipleChoiceQuestionComponent
   ],
   imports: [
     BrowserModule,
