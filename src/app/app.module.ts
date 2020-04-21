@@ -15,6 +15,7 @@ import {LessonServiceClient} from './services/LessonServiceClient';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { QuizComponent } from './quiz/quiz.component';
+import {QuizServiceClient} from './services/QuizServiceClient';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { QuizComponent } from './quiz/quiz.component';
   providers: [
     CourseServiceClient,
     ModuleServiceClient,
-    LessonServiceClient
+    LessonServiceClient,
+    QuizServiceClient,
+    QuizServiceClient
   ],
   bootstrap: [AppComponent]
 })
