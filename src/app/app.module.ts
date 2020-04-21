@@ -13,6 +13,8 @@ import {ModuleServiceClient} from './services/ModuleServiceClient';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import {LessonServiceClient} from './services/LessonServiceClient';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { QuizzesComponent } from './quizzes/quizzes.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     CourseViewerComponent,
     HomeComponent,
     ModuleListComponent,
-    LessonTabsComponent
+    LessonTabsComponent,
+    QuizzesComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
