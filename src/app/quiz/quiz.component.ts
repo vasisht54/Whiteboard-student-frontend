@@ -13,9 +13,12 @@ export class QuizComponent implements OnInit {
               private route: ActivatedRoute) { }
   questions = [];
   quizId = '';
+  courseId = '';
+
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.quizId = params.quizId;
+      this.courseId = params.courseId;
       this.svc.findQuestionsForQuiz(this.quizId)
         .then(qs => this.questions = qs);
     });

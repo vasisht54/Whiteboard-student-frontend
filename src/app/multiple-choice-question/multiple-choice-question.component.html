@@ -12,14 +12,17 @@
         <input type="radio"
                value={{choice}}
                [(ngModel)]="answer"
-               name="{{question._id}}"/>{{choice}}
+               name="{{question._id}}"/>&nbsp;{{choice}}
       </label>
-      <i
-        *ngIf="grading === true && answer === choice && answer !== question.correct"
-        class="fas fa-times float-right"></i>
-      <i
-        *ngIf="grading === true && choice === question.correct"
-        class="fas fa-check float-right"></i>
+      <!--<i
+        *ngIf="grading === true && answer === choice && answer !== question.correct">-->
+        <fa-icon  *ngIf="grading === true && answer === choice && answer !== question.correct" class="float-right" [icon]="faTimes">
+
+        </fa-icon>&nbsp;&nbsp;
+      <!--</i>-->
+     <!-- <i
+        *ngIf="grading === true && choice === question.correct">-->
+        <fa-icon *ngIf="grading === true && choice === question.correct" class="float-right" [icon]="faCheck"></fa-icon>&nbsp;&nbsp;
     </li>
 
   </ul>
@@ -29,7 +32,6 @@
   <br/>
   <span [hidden]="grading===false">
     <strong>Correct Answer: </strong> {{question.correct}}</span>
-  <br/>
 
   <button class="btn btn-success"
           [hidden]="grading !== false"
